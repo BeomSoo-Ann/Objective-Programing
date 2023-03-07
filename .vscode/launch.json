@@ -10,7 +10,7 @@
       "stopAtEntry": true,
       "cwd": "${fileDirname}",
       "environment": [],
-      "externalConsole": false,
+      "externalConsole": true,
       "MIMode": "lldb",
       "preLaunchTask": "C/C++: clang++ 활성 파일 빌드"
     }
