@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// 기초문제 1 //
 int main()
 {
     int x, y;
