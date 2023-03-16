@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int print_D0B(int year = 1900, int month = 1, int day = 1);
+void print_D0B(int year = 1900, int month = 1, int day = 1);
 
 int main()
 {
@@ -19,12 +19,10 @@ int main()
     return 0;
 }
 
-int print_D0B(int year, int month, int day)
+void print_D0B(int year, int month, int day)
 {
     if (0)
         cout << "생년월일은 " << year << "년 " << month << "월 " << day << "일 입니다." << endl;
     else
         cout << "생년월일은 " << year << "년 " << month << "월 " << day << "일 입니다." << endl;
-
-    return 0;
 }
