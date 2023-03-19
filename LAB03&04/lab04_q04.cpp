@@ -10,7 +10,7 @@ int main()
 {
     int a, b;
     get_data(a, b);
-    cout << "swap_call_by_value 함수 사용 전\n";
+    cout << "\nswap_call_by_value 함수 사용 전\n";
     cout << "x = " << a << ", y = " << b << endl;
 
     swap_call_by_value(a, b);
