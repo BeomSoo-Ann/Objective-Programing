@@ -11,12 +11,12 @@ int main()
     cout << "y = ";
     cin >> y;
 
-    cout << "Rounding up number of " << x << " is " << ceil(x) << endl;
-    cout << "Rounding down number of " << x << " is " << floor(x) << endl;
-    cout << "Rounding number of " << x << " is " << round(x) << endl;
-    cout << "Maximum number between " << x << " and " << y << " is " << max(x, y) << endl;
-    cout << y << "-th root of " << x << " is " << pow(x, 1 / y) << endl;
-    cout << "|" << x << " - " << y << "| is " << abs(x - y) << endl;
+    cout << "Rounding up number of " << x << ": " << ceil(x) << endl;
+    cout << "Rounding down number of " << x << ": " << floor(x) << endl;
+    cout << "Rounding number of " << x << ": " << round(x) << endl;
+    cout << "Maximum number between " << x << " and " << y << ": " << max(x, y) << endl;
+    cout << y << "-th root of " << x << ": " << pow(x, 1 / y) << endl;
+    cout << "|" << x << " - " << y << "| = " << abs(x - y) << endl;
 
     return 0;
 }
