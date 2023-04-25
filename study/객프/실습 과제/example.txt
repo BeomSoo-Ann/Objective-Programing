@@ -1,0 +1,4 @@
+Writing this to a file.
+Objective Oriented Programming
+Random Variables
+Linear Algebra
