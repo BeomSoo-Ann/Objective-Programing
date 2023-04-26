@@ -42,7 +42,7 @@ void get_filename(string &filename)
 void open_file(ifstream &fin, string filename)
 {
     fin.open(filename);
-    if (fin.fail())
+    if (!fin)
     {
         cout << "Error: file open failed" << endl;
         exit(1);
