@@ -2,39 +2,47 @@
 
 using namespace std;
 
-class Rectangle {
+class Rectangle
+{
 private:
     int width = 0;
     int height = 0;
 
 public:
+    // ì •ì  ë³€ìˆ˜ ì„ ì–¸
     static int Vertex;
 
-    int setWidth(int width) {
+    // ë©¤ë²„ ë³€ìˆ˜ì™€ ì´ë¦„ì´ ê°™ì€ ë§¤ê°œ ë³€ìˆ˜ë¥¼ ê°€ì§„ ìƒì„±ì(ë˜ëŠ” ë©¤ë²„ í•¨ìˆ˜)ê°€ ìˆëŠ” ê²½ìš°: thisë¥¼ ì‚¬ìš©í•´ì„œ êµ¬ë¶„í•  ìˆ˜ ìˆë‹¤.
+    int setWidth(int width)
+    {
         this->width = width;
         return getArea();
     }
-    int setHeight(int height) {
+    int setHeight(int height)
+    {
         this->height = height;
         return getArea();
     }
-    int getArea() {
+    int getArea()
+    {
         return width * height;
     }
 };
 
+// ì •ì  ë³€ìˆ˜ ë©”ëª¨ë¦¬ í• ë‹¹
 int Rectangle::Vertex = 4;
 
-int main(void) {
-    // Static Á¢±Ù 1
-    cout << "»ç°¢ÇüÀÇ ²ÀÁşÁ¡Àº " << Rectangle::Vertex << "°³ ÀÔ´Ï´Ù." << endl;
+int main(void)
+{
+    // Static ì ‘ê·¼ 1
+    cout << "ì‚¬ê°í˜•ì˜ ê¼­ì§“ì ì€ " << Rectangle::Vertex << "ê°œ ì…ë‹ˆë‹¤." << endl;
 
     Rectangle rect;
-    // Static Á¢±Ù 2
-    cout << "»ç°¢ÇüÀÇ ²ÀÁşÁ¡Àº " << rect.Vertex << "°³ ÀÔ´Ï´Ù." << endl;
+    // Static ì ‘ê·¼ 2
+    cout << "ì‚¬ê°í˜•ì˜ ê¼­ì§“ì ì€ " << rect.Vertex << "ê°œ ì…ë‹ˆë‹¤." << endl;
 
     rect.setHeight(30);
     rect.setWidth(40);
 
-    cout << "³ôÀÌ°¡ 30ÀÌ°í ³Êºñ°¡ 40ÀÎ »ç°¢ÇüÀÇ ³ĞÀÌ´Â " << rect.getArea() << "ÀÔ´Ï´Ù.";
+    cout << "ë†’ì´ê°€ 30ì´ê³  ë„ˆë¹„ê°€ 40ì¸ ì‚¬ê°í˜•ì˜ ë„“ì´ëŠ” " << rect.getArea() << "ì…ë‹ˆë‹¤.";
 }
